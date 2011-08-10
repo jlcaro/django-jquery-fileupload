@@ -1,0 +1,9 @@
+dist
+build
+*.dat
+*.egg*
+*.pyc
+*.swp
+*.log
+MANIFEST
+.idea
