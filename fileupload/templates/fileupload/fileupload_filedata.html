@@ -1,0 +1,14 @@
+<tr class="template-download" style="">
+    <td class="preview"> </td>
+        <td class="name">
+            <a href="{{ filedata.url }}">{{ filedata.name }}</a>
+        </td>
+        <td class="size"></td>
+        <td colspan="2"></td>
+    <td class="delete">
+        <button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" data-url="{{ filedata.delete_url }}" data-type="{{ filedata.delete_type }}" role="button" title="Delete">
+            <span class="ui-button-icon-primary ui-icon ui-icon-trash"></span>
+            <span class="ui-button-text">Delete</span>
+        </button>
+    </td>
+</tr>
