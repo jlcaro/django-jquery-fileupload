@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+{% load upload_tags %}
+<html>
+<head>
+    <title>Demo JQuery FileUpload</title>
+
+    <link rel="stylesheet" href="{{ STATIC_URL }}fileupload/css/jqueryui/1.8.14/themes/base/jquery.ui.all.css" id="theme">
+    <link rel="stylesheet" href="{{ STATIC_URL }}fileupload/css/jquery.fileupload-ui.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}fileupload/css/style.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}fileupload/css/thumbnail-scaling.css">
+
+</head>
+<body>
+
+{% include "fileupload/file_form.html" %}
+
+{% upload_js %}
+
+<script src="{{ STATIC_URL }}fileupload/js/jquery-1.6.2.min.js"></script>
+<script src="{{ STATIC_URL }}fileupload/js/jquery-ui-1.8.14.custom.min.js"></script>
+<script src="{{ STATIC_URL }}fileupload/js/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+<script src="{{ STATIC_URL }}fileupload/js/jquery.iframe-transport.js"></script>
+<script src="{{ STATIC_URL }}fileupload/js/jquery.fileupload.js"></script>
+<script src="{{ STATIC_URL }}fileupload/js/jquery.fileupload-ui.js"></script>
+<script src="{{ STATIC_URL }}fileupload/js/application.js"></script>
+
+</body>
+</html>
